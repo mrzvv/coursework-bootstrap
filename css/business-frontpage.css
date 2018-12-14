@@ -1,0 +1,56 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.cuteCrafts-header {
+  height: 40vh;
+  min-height: 500px;
+  background: url('../gallery/cats.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.card {
+  height: 100%;
+}
+
+#logo {
+  margin: 10px;
+}
+
+nav {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  background-color: #faf4f6;
+}
+
+#heading {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+footer {
+  background-color: #faf4f6;
+  /*background-image: url('../backgrounds/2.7.jpg');*/
+  color: #696969;
+}
+
+.socialNetworksIcons {
+  margin-right: 10px;
+  width: 35px;
+}
+
+#author {
+  margin-top: 0px;
+  margin-bottom: -25px;
+}
+
+.footerContent {
+  margin-top: -40px;
+}
+
+#promo {
+  color: #CD5C5C;
+}
