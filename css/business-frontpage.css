@@ -27,6 +27,12 @@ nav {
   background-color: #faf4f6;
 }
 
+#brand-footer {
+  font-family: 'Amatic SC', cursive;
+  font-size: 32px;
+  margin-left: -10px;
+}
+
 #heading {
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -39,6 +45,7 @@ footer {
 
 .socialNetworksIcons {
   margin-right: 10px;
+  padding-bottom: 10px;
   width: 35px;
 }
 
@@ -53,4 +60,9 @@ footer {
 
 #promo {
   color: #CD5C5C;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
 }
