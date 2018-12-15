@@ -9,6 +9,29 @@
 	<link href="css/business-frontpage.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="icons/logo.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat+Alternates|Rubik" rel="stylesheet">
+	<script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/jqcart.min.js"></script>
+    <script>
+      $(function(){
+        'use strict'; 
+        // инициализация плагина
+        $.jqCart({
+          buttons: '.add_item',
+          handler: './php/handler.php',
+          cartLabel: '.label-place',
+          visibleLabel: true,
+          openByAdding: true,
+          currency: 'BYN'
+        }); 
+        // Пример с дополнительными методами
+        $('#open').click(function(){
+          $.jqCart('openCart'); // открыть корзину
+        });
+        $('#clear').click(function(){
+          $.jqCart('clearCart'); // очистить корзину
+        }); 
+      });
+    </script>
 </head>
 
 <body>
