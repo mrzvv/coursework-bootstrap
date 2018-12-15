@@ -18,7 +18,7 @@ body {
   -o-background-size: cover;
 }
 
-#christmas-header-text {
+#christmas-header-text, #wrapping-header-text {
 	margin-top: 20%;
 }
 
@@ -35,4 +35,15 @@ body {
 
 #decoupage-header-text {
 	margin-top: 5%;
+}
+
+#header-wrapping {
+  height: 40vh;
+  min-height: 500px;
+  background: url('../headings/wrapping.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
