@@ -47,3 +47,18 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+
+#header-toys {
+  height: 40vh;
+  min-height: 400px;
+  background: url('../headings/toys.png');
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.toys {
+  margin-top: -15px;
+}
