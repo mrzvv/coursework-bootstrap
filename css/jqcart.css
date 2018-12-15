@@ -23,7 +23,7 @@
     background: -o-linear-gradient(top, #b8c6df 0%, #6d88b7 100%);
     background: -ms-linear-gradient(top, #b8c6df 0%, #6d88b7 100%);
     background: linear-gradient(to bottom, #b8c6df 0%, #6d88b7 100%);
-    color: #F7F7F7;
+    color: #fbf7f7;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -32,7 +32,7 @@
     width: 70%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-right: 1px solid #F7F7F7;
+    border-right: 1px solid #fbf7f7;
     text-align: left;
 }
 .jqcart-cart-label .jqcart-total-cnt {
@@ -64,7 +64,7 @@
     padding: 10px;
     vertical-align: middle;
     border-radius: 10px;
-    background-color: #F7F7F7;
+    background-color: #fbf7f7;
     box-shadow: 0 0 7px 5px rgba(0, 0, 0, .3);
 }
 /* Сообщение "Корзина пуста" */
@@ -79,12 +79,10 @@
 }
 /* Таблица с заказанными товарами */
 .jqcart-cart-title {
-	  position: relative;
+	position: relative;
     margin-bottom: 10px;
     font-size: 1.2em;
-    font-weight: bold;
-    text-align: left;
-    color: #6d88b7;
+    text-align: center;
 }
 .jqcart-cart-title .jqcart-print-order {
   position: absolute;
@@ -158,26 +156,15 @@
 /* Кнопка удаления отдельного товара из корзины */
 .jqcart-del-item {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    font-family: Arial;
-    text-align: center;
-    border: 2px solid #F00;
-    background-color: #f00;
-    color: #FFF;
-    border-radius: 50%;
+    font-size: 20px;
     cursor: pointer;
+    color: #F00;
 }
 .jqcart-del-item:before {
   display: inline-block;
-  content: 'X';
-  vertical-align: text-bottom;
+  content: 'x';
 }
-.jqcart-del-item:hover {
-    color: #F00;
-    background-color: #FFF;
-    
-}
+
 /* Форма для заказчика */
 .jqcart-orderform {
     text-align: left;
@@ -224,6 +211,31 @@
 .jqcart-orderform input[type=reset] {
     padding: 5px;
 }
+
+#button-submit {
+  cursor: pointer;
+  min-width: 200px;
+  padding: 15px 15px;
+  vertical-align: middle;
+  background: #3da35a;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 1s;
+}
+
+#button-return {
+  cursor: pointer;
+  min-width: 200px;
+  padding: 15px 15px;
+  vertical-align: middle;
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  transition: all 1s;
+}
+
 .jqcart-orderform input[type=reset] {
     float: right;
 }
