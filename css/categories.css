@@ -15,5 +15,20 @@
 }
 
 #christmas-header-text {
-	margin-top: 220px;
+	margin-top: 20%;
+}
+
+#header-decoupage {
+  height: 40vh;
+  min-height: 500px;
+  background: url('../headings/decoupage.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#decoupage-header-text {
+	margin-top: 5%;
 }
