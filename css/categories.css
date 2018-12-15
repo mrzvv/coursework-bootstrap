@@ -62,3 +62,18 @@ body {
 .toys {
   margin-top: -15px;
 }
+
+#header-cards {
+  height: 40vh;
+  min-height: 400px;
+  background: url('../headings/cards.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#cards-header-text {
+  margin-top: 3%;
+}
