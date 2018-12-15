@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cute crafts - упаковка подарков</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="css/categories.css" rel="stylesheet">
+    <link href="css/jqcart.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="icons/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat+Alternates|Rubik" rel="stylesheet">
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/jqcart.min.js"></script>
+    <script>
+      $(function(){
+        'use strict'; 
+        // инициализация плагина
+        $.jqCart({
+          buttons: '.add_item',
+          handler: './php/handler.php',
+          cartLabel: '.label-place',
+          visibleLabel: true,
+          openByAdding: true,
+          currency: 'BYN'
+        }); 
+        // Пример с дополнительными методами
+        $('#open').click(function(){
+          $.jqCart('openCart'); // открыть корзину
+        });
+        $('#clear').click(function(){
+          $.jqCart('clearCart'); // очистить корзину
+        }); 
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <img src="icons/logo.png" width="50" id="logo">
+        <a class="navbar-brand" href="index.html">cute crafts - подарки ручной работы</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#categories">каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">о проекте</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partnership">сотрудничество</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="open"><img src="icons/cart.png" width="30" alt="Корзина"></button>
+              <!-- <a class="nav-link" href="cart.html"></a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4" id="header-wrapping">
+        <div id="wrapping-header-text">
+          <h3 class="display-4">Упаковка подарков</h3>
+          <p class="lead">Выбор подарка - дело очень непростое. Но не менее легко определиться с подходящей упаковкой. Помощь уже здесь ;)</p>
+        </div>
+      </header>
+
+      <!-- Page Features -->
+      <div class="row text-center">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card item_box">
+            <img class="card-img-top" src="gallery/wrapping.jpg" height="150px">
+            <h6 class="card-title item_title card-body">Упаковка книг</h6>
+            <p class="card-footer"><span class="item_price">3</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="021" data-title="Упаковка книг" data-price="3" data-img="gallery/wrapping.jpg"><img src="icons/cart.png" width="30" alt="Корзина"> + 1</button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card item_box">
+            <img class="card-img-top" src="gallery/wrapping/bonbons.jpg" height="150px">
+            <h6 class="card-title item_title card-body">Коробочка-пирамидка</h6>
+            <p class="card-footer"><span class="item_price">2</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="022" data-title="Коробочка-пирамидка" data-price="2" data-img="gallery/wrapping/bonbons.jpg"><img src="icons/cart.png" width="30" alt="Корзина"> + 1</button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card item_box">
+            <img class="card-img-top" src="gallery/wrapping/christmas.jpg" height="150px">
+            <h6 class="card-title item_title card-body">Новогодняя упаковка</h6>
+            <p class="card-footer"><span class="item_price">3.5</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="023" data-title="Новогодняя упаковка" data-price="3.5" data-img="gallery/wrapping/christmas.jpg"><img src="icons/cart.png" width="30" alt="Корзина"> + 1</button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card item_box">
+            <img class="card-img-top" src="gallery/wrapping/bags.jpg" height="150px">
+            <h6 class="card-title item_title card-body">Тканевые мешочки</h6>
+            <p class="card-footer"><span class="item_price">4</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="024" data-title="Тканевые мешочки" data-price="4" data-img="gallery/wrapping/bags.jpg"><img src="icons/cart.png" width="30" alt="Корзина"> + 1</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="container-fluid">
+        <div class="row footerContent">
+          <!--СОТРУДНИЧЕСТВО-->
+          <div class="col-sm-4 p-3">
+            <a name = "partnership"></a> <!--ЯКОРЬ ДЛЯ ССЫЛКИ "СОТРУДНИЧЕСТВО" ИЗ HEADER.NAV-->
+            <h5>Сотрудничество</h5>
+            <p>Если ты тоже обеими руками за креатив, напиши мне с темой "СОТРУДНИЧЕСТВО", и мы вместе воплотим твою идею в жизнь!</p>
+          </div>
+          <!--СОЦСЕТИ-->
+          <div class="col-sm-4 p-3">
+            <h5>Найди меня в соцсетях:</h5>
+            <a href="https://www.facebook.com/mrzv.vv"><img src="icons/circle/fb.png" class="socialNetworksIcons"></a>
+            <a href="https://www.instagram.com/mrzv_vv"><img src="icons/circle/inst.png" class="socialNetworksIcons"></a>
+            <a href="https://twitter.com/mrzv_vv"><img src="icons/circle/twi.png" class="socialNetworksIcons"></a>
+            <p id="promo">Все подписчики получают постоянную скидку 10%!</p>
+          </div>
+
+          <!--ЛОГО-->
+          <div class="col-sm-4 p-3">
+            <div class="row">
+              <div class="col-sm-3"><img src="icons/logo.png" width="100"></div>
+              <div class="col-sm-9 p-4" id="brand-footer">cute crafts - подарки ручной работы</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" id="author">&copy; Валерия Морозова | 573901 | 2018</div>
+    </footer>
+  </body>
+</html>
