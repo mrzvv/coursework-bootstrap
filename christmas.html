@@ -10,6 +10,8 @@
     <link href="css/categories.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="icons/logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat+Alternates|Rubik" rel="stylesheet">
+    <!-- <script type="text/javascript" src="scripts/cart.js"></script> -->
+
   </head>
 
   <body>
@@ -53,60 +55,45 @@
       <div class="row text-center">
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
+          <div class="card item_box">
             <img class="card-img-top" src="gallery/wraith.jpg" height="150px">
-            <div class="card-body">
-              <h6 class="card-title">Рождественский венок</h6>
-            </div>
-            <div class="card-footer">
-              <p>10 BYN</p>
-              <a href="#" class="btn btn-outline-secondary"><img src="icons/cart.png" width="30" alt="Корзина"></a>
-            </div>
+            <h6 class="card-title item_title card-body">Рождественский венок</h6>
+            <p class="card-footer"><span class="item_price">10</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="001"><img src="icons/cart.png" width="30" alt="Корзина"></button>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
+          <div class="card item_box">
             <img class="card-img-top" src="gallery/christmas/deers.jpg" height="150px">
-            <div class="card-body">
-              <h6 class="card-title">Игрушечные олени</h6>
-            </div>
-            <div class="card-footer">
-              <p>12 BYN</p>
-              <a href="#" class="btn btn-outline-secondary"><img src="icons/cart.png" width="30" alt="Корзина"></a>
-            </div>
+            <h6 class="card-title item_title card-body">Игрушечные олени</h6>
+            <p class="card-footer"><span class="item_price">12</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="002"><img src="icons/cart.png" width="30" alt="Корзина"></button>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
+          <div class="card item_box">
             <img class="card-img-top" src="gallery/christmas/card.jpg" height="150px">
-            <div class="card-body">
-              <h6 class="card-title">Поздравительная открытка</h6>
-            </div>
-            <div class="card-footer">
-              <p>3 BYN</p>
-              <a href="#" class="btn btn-outline-secondary"><img src="icons/cart.png" width="30" alt="Корзина"></a>
-            </div>
+            <h6 class="card-title item_title card-body">Поздравительная открытка</h6>
+            <p class="card-footer"><span class="item_price">3</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="003"><img src="icons/cart.png" width="30" alt="Корзина"></button>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
+          <div class="card item_box">
             <img class="card-img-top" src="gallery/christmas/boxes.jpg" height="150px">
-            <div class="card-body">
-              <h6 class="card-title">Подарочная коробочка</h6>
-            </div>
-            <div class="card-footer">
-              <p>3.5 BYN</p>
-              <a href="#" class="btn btn-outline-secondary"><img src="icons/cart.png" width="30" alt="Корзина"></a>
-            </div>
+            <h6 class="card-title item_title card-body">Подарочная коробочка</h6>
+            <p class="card-footer"><span class="item_price">3.5</span> BYN</p>
+            <button class="btn btn-outline-secondary add_item" data-id="004"><img src="icons/cart.png" width="30" alt="Корзина"></button>
           </div>
         </div>
 
       </div>
+      <p><button id="checkout">Оформить заказ</button> &nbsp; <button id="clear_cart">Очистить корзину</button></p>
+      <div id="cart_content"></div>
       <!-- /.row -->
-
     </div>
     <!-- /.container -->
 
@@ -140,6 +127,6 @@
       </div>
       <div class="text-center" id="author">&copy; Валерия Морозова | 573901 | 2018</div>
     </footer>
-
+  <script src="scripts/cart.js" type="text/javascript" async></script>
   </body>
 </html>
