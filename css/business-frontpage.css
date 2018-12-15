@@ -33,7 +33,7 @@ nav {
 
 #brand-footer {
   font-family: 'Amatic SC', cursive;
-  font-size: 32px;
+  font-size: 30px;
   margin-left: -10px;
 }
 
@@ -45,6 +45,10 @@ footer {
   background-color: #faf4f6;
   /*background-image: url('../backgrounds/2.7.jpg');*/
   color: #696969;
+}
+
+footer p, #author {
+  font-size: 15px;
 }
 
 .socialNetworksIcons {
