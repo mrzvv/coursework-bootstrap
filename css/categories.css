@@ -77,3 +77,18 @@ body {
 #cards-header-text {
   margin-top: 3%;
 }
+
+#header-cross-stitch {
+  height: 40vh;
+  min-height: 400px;
+  background: url('../headings/cross-stitch.jpg');
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#cross-stitch-header-text {
+  margin-top: 11%;
+}
