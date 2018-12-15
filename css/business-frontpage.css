@@ -31,6 +31,13 @@ nav {
   background-color: #faf4f6;
 }
 
+#open, #open:focus {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
 #brand-footer {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
