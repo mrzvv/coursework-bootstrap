@@ -31,6 +31,16 @@ nav {
   background-color: #faf4f6;
 }
 
+a.anchor {
+  position: absolute;
+  top: -60px;
+}
+
+#categories {
+  position: relative;
+  top: -90px;
+}
+
 #open, #open:focus {
   border: none;
   background: transparent;
